@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Тестирование ПП</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <script type="text/javascript">
+      document.onmousedown = function() {
+        document.body.setAttribute("class", "is-highlighted");
+      }
+      document.onmouseup = function() {
+        document.body.setAttribute("class", "");
+      }
+    </script>
+    <style>
+      html, body {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        text-align: center;
+      }
+      a {
+        position: absolute;
+        z-index: 100;
+      }
+      body.is-highlighted a {
+        background-color: #0000ff;
+        opacity: .2;
+      }
+      main {
+        position: relative;
+        display: inline-block;
+      }
+    </style>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter35000720 = new Ya.Metrika({
+                    id:35000720,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/35000720" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  </head>
+  <body><main>
+<!-- 04-cycle -->
+<div class="popup-time invisible">
+  <a class="popup-time-close"></a>
+  <a class="popup-time-cancel"></a>
+</div>
+
+<img src="img/04-cycle.png">
+<a href="02-cycle.html" style="left: 1248px; top: 0px; width: 32px; height: 34px"></a>
+<a href="04-cycle.html" style="left: 501px; top: 87px; width: 94px; height: 42px"></a>
+<a href="05-cycle.html" style="left: 595px; top: 87px; width: 79px; height: 42px"></a>
+<a href="06-cycle.html" style="left: 674px; top: 87px; width: 101px; height: 42px"></a>
+<a href="07-cycle.html" style="left: 775px; top: 87px; width: 131px; height: 42px"></a>
+<a href="08-cycle.html" style="left: 906px; top: 87px; width: 81px; height: 42px"></a>
+<a href="#" style="left: 1061px; top: 121px; width: 219px; height: 37px" class="link"></a>
+</main>
+<script src="popup.js" type="application/javascript"></script>
+</body></html>

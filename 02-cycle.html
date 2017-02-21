@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Тестирование ПП</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="instructions-panel.css">
     <script type="text/javascript">
       document.onmousedown = function() {
         document.body.setAttribute("class", "is-highlighted");
@@ -64,9 +66,27 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/35000720" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
   </head>
-  <body><main>
-<!-- 02-cycle -->
-<img src="img/02-cycle.png">
-<a href="04-cycle.html" style="left: 180px; top: 406px; width: 1100px; height: 60px"></a>
-</main>
-</body></html>
+  <body>
+    <main>
+      <!-- 02-cycle -->
+      <img src="img/02-cycle.png">
+      <a href="04-cycle.html" style="left: 180px; top: 406px; width: 1100px; height: 60px"></a>
+    </main>
+
+    <!-- Панель иструкций -->
+        <div class="instructions">
+          <div class="instructions-content">
+            <p class="instructions-text">
+              Ура! Вы отправили заявки в КабУЦ.
+              Достаточно ли информации в сертификатах? Понятно ли, что делать дальше?
+              Чтобы посмотреть, какие есть документы, перейдите на вкладку «Документы»
+            </p>
+            <div class="instructions-action">
+              <div class="button button-casual small">Оценить интерфейс</div>
+            </div>
+          </div>
+        </div>
+    <!-- Панель иструкций -->
+
+  </body>
+</html>

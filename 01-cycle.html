@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Тестирование ПП</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="instructions-panel.css">
     <script type="text/javascript">
       document.onmousedown = function() {
         document.body.setAttribute("class", "is-highlighted");
@@ -18,6 +20,7 @@
         margin: 0;
       }
       body {
+        font-family: 'Segoe UI', 'Arial', sans-serif;
         text-align: center;
       }
       a {
@@ -32,42 +35,70 @@
         position: relative;
         display: inline-block;
       }
+
+      p {
+        margin-top: 5px;
+        float: left;
+      }
+
+      div a {
+        position: inherit;
+      }
     </style>
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter35000720 = new Ya.Metrika({
-                    id:35000720,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true,
-                    trackHash:true
-                });
-            } catch(e) { }
-        });
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter35000720 = new Ya.Metrika({
+                        id:35000720,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true,
+                        trackHash:true
+                    });
+                } catch(e) { }
+            });
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/35000720" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/35000720" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
-  <body><main>
-<!-- 01-cycle -->
-<img src="img/01-cycle.png">
-<a href="02-cycle.html" style="left: 255px; top: 224px; width: 135px; height: 46px"></a>
-</main>
+  <body>
+    <main>
+      <!-- 01-cycle -->
+      <img src="img/01-cycle.png">
+      <a href="02-cycle.html" style="left: 255px; top: 224px; width: 135px; height: 46px"></a>
+    </main>
+
+    <!-- Панель иструкций -->
+        <div class="instructions">
+          <div class="instructions-content">
+            <p class="instructions-text">
+              Ура! Вы отправили заявки в КабУЦ.
+              Достаточно ли информации в сертификатах? Понятно ли, что делать дальше?
+              Чтобы посмотреть, какие есть документы, перейдите на вкладку «Документы»
+            </p>
+            <div class="instructions-action">
+              <a href="https://b-kontur.typeform.com/to/zhZSCd" target="_blank">
+                <div class="button button-casual small">Оценить интерфейс</div>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Панель иструкций -->
+
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Тестирование ПП</title>
+  <link rel="stylesheet" href="buttons.css">
   <style>
     body {
       background-image: url('img/back.jpg') ;
@@ -20,29 +21,12 @@
       margin: 60px auto;
       padding: 10px 50px 80px;
     }
-    .button-start {
-      margin-top: 30px;
-      position: relative;
-      top: 0;
-      font-family: 'Segoe UI';
-      font-size: 16px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-      outline:none;
-      color: #fff;
-      background-color:#3390D8;
-      box-shadow: 0px 4px 0px #2972AE;
-      width: 200px;
-      text-align: center;
-    }
-    .button-start:hover {
-      box-shadow: 0px 5px 0px #2972AE;
-      top: -1px;
-    }
+
     a {
       text-decoration: none;
+    }
+    p {
+      margin-bottom: 30px;
     }
   </style>
   <!-- Yandex.Metrika counter -->
@@ -74,14 +58,15 @@
       })(document, window, "yandex_metrika_callbacks");
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/35000720" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->  
+  <!-- /Yandex.Metrika counter -->
 </head>
 <body>
   <div class="container">
     <h1>Привет!</h1>
-    <p>Мы тестируем потенциальные продажи. Это картинки, поэтому нажимается не все. Если ничего не происходит—кликните в любое место и увидите синие области, они кликабельные.</p>
+    <p>Мы тестируем потенциальные продажи. Это картинки, поэтому нажимается не все.
+      Если ничего не происходит—кликните в любое место и увидите синие области, они кликабельные.</p>
     <a href="01-cycle.html">
-      <div class="button-start">Посмотреть интерфейс</div>
+      <div class="button button-major">Посмотреть интерфейс</div>
     </a>
   </div>
 </body>

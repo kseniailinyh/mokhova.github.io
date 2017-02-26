@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Тестирование ПП</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="instructions-panel.css">
     <link rel="stylesheet" href="popup.css">
     <script type="text/javascript">
       document.onmousedown = function() {
@@ -32,6 +34,10 @@
       main {
         position: relative;
         display: inline-block;
+      }
+
+      div a {
+        position: inherit;
       }
     </style>
     <!-- Yandex.Metrika counter -->
@@ -65,20 +71,40 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/35000720" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
   </head>
-  <body><main>
-<!-- 05-cycle -->
-<div class="popup-time invisible">
-  <a class="popup-time-close"></a>
-  <a class="popup-time-cancel"></a>
-</div>
-<img src="img/05-cycle.png">
-<a href="02-cycle.html" style="left: 1248px; top: 0px; width: 32px; height: 34px"></a>
-<a href="04-cycle.html" style="left: 501px; top: 87px; width: 94px; height: 42px"></a>
-<a href="05-cycle.html" style="left: 595px; top: 87px; width: 79px; height: 42px"></a>
-<a href="06-cycle.html" style="left: 674px; top: 87px; width: 101px; height: 42px"></a>
-<a href="07-cycle.html" style="left: 775px; top: 87px; width: 131px; height: 42px"></a>
-<a href="08-cycle.html" style="left: 906px; top: 87px; width: 81px; height: 42px"></a>
-<a href="#" style="left: 1061px; top: 121px; width: 219px; height: 37px" class="link"></a>
-</main>
-<script src="popup.js" type="application/javascript"></script>
-</body></html>
+  <body>
+    <main>
+      <!-- 05-cycle -->
+      <div class="popup-time invisible">
+        <a class="popup-time-close"></a>
+        <a class="popup-time-cancel"></a>
+      </div>
+      <img src="img/05-cycle.png">
+      <a href="02-cycle.html" style="left: 1248px; top: 0px; width: 32px; height: 34px"></a>
+      <a href="04-cycle.html" style="left: 501px; top: 87px; width: 94px; height: 42px"></a>
+      <a href="05-cycle.html" style="left: 595px; top: 87px; width: 79px; height: 42px"></a>
+      <a href="06-cycle.html" style="left: 674px; top: 87px; width: 101px; height: 42px"></a>
+      <a href="07-cycle.html" style="left: 775px; top: 87px; width: 131px; height: 42px"></a>
+      <a href="08-cycle.html" style="left: 906px; top: 87px; width: 81px; height: 42px"></a>
+      <a href="#" style="left: 1061px; top: 121px; width: 219px; height: 37px" class="link"></a>
+    </main>
+
+    <!-- Панель иструкций -->
+        <div class="instructions">
+          <div class="instructions-content">
+            <p class="instructions-text">
+              Ура! Вы отправили заявки в КабУЦ.
+              Достаточно ли информации в сертификатах? Понятно ли, что делать дальше?
+              Чтобы посмотреть, какие есть документы, перейдите на вкладку «Документы»
+            </p>
+            <div class="instructions-action">
+              <a href="https://b-kontur.typeform.com/to/zhZSCd" target="_blank">
+                <div class="button button-casual small">Оценить интерфейс</div>
+              </a>
+            </div>
+          </div>
+        </div>
+    <!-- Панель иструкций -->
+
+    <script src="popup.js" type="application/javascript"></script>
+</body>
+</html>
